@@ -5,11 +5,11 @@ from setuptools import setup
 
 requirements = [
     'lxml',             # For XML DOM Tree
-    'networkx==2.2',    # For joint graph
+    'networkx',    # For joint graph
     'numpy',            # Numpy
     'pillow',           # For texture image loading
-    'pycollada==0.6',   # COLLADA (.dae) mesh loading via trimesh
-    'pyrender>=0.1.20', # For visualization
+    'pycollada',   # COLLADA (.dae) mesh loading via trimesh
+    'pyrender@git+https://github.com/bearpaw/pyrender.git@python3', # For visualization
     'scipy',            # For trimesh, annoyingly
     'six',              # Python 2/3 compatability
     'trimesh',          # Mesh geometry loading/creation/saving
@@ -45,7 +45,6 @@ setup(
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Natural Language :: English',
